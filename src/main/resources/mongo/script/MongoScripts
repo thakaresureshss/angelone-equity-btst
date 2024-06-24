@@ -1,0 +1,35 @@
+-- Find Orders By Order ID
+db.open_orders.find({"orderId":2812455447151});
+
+-- Delete Trade From DB
+db.open_orders.deleteMany({});
+db.open_trades.deleteMany({});
+
+-- Delete Order From DB
+db.open_orders.deleteMany({});
+
+Find All Records by Order Category, User, Order Status,
+db.open_orders.find({"userId":"ST27101989","orderCategory":"SQAREOFF","strategyName":"BIGCANDLE","orderStatus":"CANCELLED"});
+
+Find count of All Records by Order Category, User, Order Status,
+db.open_orders.find({"userId":"ST27101989","orderCategory":"SQAREOFF","strategyName":"BIGCANDLE","orderStatus":"CANCELLED"}).count();
+
+Find Today's Order Count
+db.open_orders.find({"userId":"ST27101989", createdAt: { $gt: new Date('2023-07-19') } }).count();
+
+Find Today's Order
+db.open_orders.find({"userId":"ST27101989", createdAt: { $gt: new Date('2023-07-19') }});
+
+Find Orders where modification count is > 10;
+db.open_orders.find({"userId":"ST27101989","strategyName":"BIGCANDLE","orderStatus":"CANCELLED",createdAt: { $gt: new Date('2023-07-19') }}).count();
+
+# Sort Order by createdAt
+db.open_orders.find({"userId":"ST27101989","strategyName":"BIGCANDLE","orderStatus":"CANCELLED","createdAt": { $gt: new Date('2023-07-20') }}).sort( { createdAt: 1 } )
+
+
+db.open_orders.find({"userId":"ST27101989",createdAt: { $gt: new Date('2023-08-09') }}).sort( { createdAt: 1 } )
+
+db.open_orders.deleteMany({"userId":"ST27101989","strategyName":"BIGCANDLE","orderStatus":"CANCELLED",createdAt: { $gt: new Date('2023-07-20') }});
+
+
+db.open_trades.find({"userId":"ST27101989",createdTime: { $gt: new Date('2023-08-09') }}).sort( { createdTime: 1 } )

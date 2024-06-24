@@ -1,0 +1,168 @@
+{
+	"success": {
+		"advancedChart": {
+			"host": "",
+			"port": 0
+		},
+		"apiToken": {
+			"productMarking": [
+				{
+					"mark": 0,
+					"name": "Normal",
+					"type": "A"
+				},
+				{
+					"mark": 1,
+					"name": "Delivery",
+					"type": "S"
+				},
+				{
+					"mark": 2,
+					"name": "BNST",
+					"type": "S"
+				},
+				{
+					"mark": 3,
+					"name": "Holding",
+					"type": "N"
+				},
+				{
+					"mark": 4,
+					"name": "Margin Trading",
+					"type": "A"
+				},
+				{
+					"mark": 5,
+					"name": "Super Multiple",
+					"type": "A"
+				},
+				{
+					"mark": 6,
+					"name": "Buy Delivery",
+					"type": "A"
+				},
+				{
+					"mark": 7,
+					"name": "Derivative Strategies",
+					"type": "N"
+				},
+				{
+					"mark": 8,
+					"name": "Derivative Plus",
+					"type": "N"
+				},
+				{
+					"mark": 9,
+					"name": "Margin Trading Pledged",
+					"type": "N"
+				},
+				{
+					"mark": 12,
+					"name": "MIS",
+					"type": "A"
+				}
+			],
+			"redirect": {
+				"host": "",
+				"port": 0
+			},
+			"sessionId": "338874723#0-327653"
+		},
+		"broadcast": {
+			"host": "",
+			"port": 0
+		},
+		"clientCode": "YQIGA",
+		"clientName": "SURESH NIVRUTTI THAKARE",
+		"dormantType": "-",
+		"emailId": "-",
+		"enabledExchangeSegments": {
+			"CASH": [
+				{
+					"exchange": "NSE",
+					"status": "ACTIVE"
+				},
+				{
+					"exchange": "BSE",
+					"status": "ACTIVE"
+				}
+			],
+			"CDS": [
+				{
+					"exchange": "NSE",
+					"status": "ACTIVE"
+				},
+				{
+					"exchange": "MCX",
+					"status": "NOACCESS"
+				}
+			],
+			"COMMODITY": [
+				{
+					"exchange": "MCX",
+					"status": "ACTIVE"
+				}
+			],
+			"FNO": [
+				{
+					"exchange": "NSE",
+					"status": "ACTIVE"
+				},
+				{
+					"exchange": "BSE",
+					"status": "INACTIVE"
+				}
+			]
+		},
+		"enabledProducts": [
+			"NORMAL",
+			"SUPERMULTIPLE",
+			"SUPERMULTIPLEOPTION",
+			"MTF",
+			"MIS"
+		],
+		"enabledSegments": [
+			"CASH",
+			"FO",
+			"CDS"
+		],
+		"getLTPURL": "",
+		"getLtp": {
+			"host": "",
+			"port": 0
+		},
+		"isNRI": "N",
+		"isTrinity": true,
+		"loginTime": "3/16/2023 11:44:08 PM",
+		"marginProduct": {
+			"isEnabled": ""
+		},
+		"marketData": {
+			"host": "",
+			"port": 0
+		},
+		"nomineeFlag": 0,
+		"phoneNo": "-",
+		"poaFlag": "-",
+		"redirect": {
+			"host": "",
+			"port": 0
+		},
+		"search": {
+			"host": "",
+			"port": 0
+		},
+		"searchURL": "",
+		"service": {
+			"host": "",
+			"port": 0
+		},
+		"sessionToken": "CD16D99C168C8C0E565FF03E617A4B53B83478D60B97A3",
+		"stwtFlag": "Y",
+		"userId": "ST27101989",
+		"weblink": {
+			"host": "",
+			"port": 0
+		}
+	}
+}

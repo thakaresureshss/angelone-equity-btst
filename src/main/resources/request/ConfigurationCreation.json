@@ -1,0 +1,8 @@
+{
+  "configurationDetails": {
+    "configs": {
+      "MARKET_MIN_SL_PERCENT": "20",
+      "BROKER_MAX_MODIFICATION_COUNT": "9"
+    }
+  }
+}

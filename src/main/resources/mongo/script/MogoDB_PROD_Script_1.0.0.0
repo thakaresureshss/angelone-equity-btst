@@ -1,0 +1,125 @@
+use algotrade
+db.candle_data.deleteMany({});
+db.open_orders.deleteMany({});
+db.open_trades.deleteMany({});
+db.closed_orders.deleteMany({});
+db.instrument_master.deleteMany({});
+db.instrument_watch_master.deleteMany({});
+db.margin_master.deleteMany({});
+
+db.user_master.insert({
+  "_id": 1,
+  "userId": "ST27101989",
+  "password": "79+h5Kv2Nk5SIrN48HQWpQ==",
+  "accessToken": "ca89e510-bc38-37f5-97a4-a98cf968770e",
+  "broker": "Kotak",
+  "appId": "AlgoTrade",
+  "consumerKey": "0RAnRHT4hCBaTeqegWf02XpMfG4a",
+  "consumerSecrete": "OeJGEhFuDtjLf__d0jOmUF7Lo7ca",
+  "exchange": "NSE",
+  "oneTimeToken": "",
+  "sessionToken": "",
+  "websocketToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwUkFuUkhUNGhDQmFUZXFlZ1dmMDJYcE1mRzRhIiwiaWF0IjoxNjg5NDM0MjM4LCJleHAiOjE2ODk1MjA2Mzh9.vJBiaE2l6iHU_hFl0MbLfTAFYHSTtprUruJ26gg1Kes",
+  "dayProfitLimit": {
+    "EQ": "15000",
+    "FNO": "20000"
+  },
+  "dayLossLimit": {
+    "EQ": "7500",
+    "FNO": "10000"
+  },
+  "minTradesPerDay": {
+    "EQ": 0,
+    "FNO": 0
+  },
+  "maxTradesPerDay": {
+    "EQ": 4,
+    "FNO": 3
+  },
+  "isRealTradingEnabled": false,
+  "active": true,
+  "enabledSegments": [
+    "EQ",
+    "FNO"
+  ],
+  "enabledStrategies": [
+    "BIGCANDLE"
+  ],
+  "_class": "com.trade.algotrade.enitiy.UserEntity"
+});
+
+db.user_master.insert({
+  "_id": 2,
+  "userId": "PO1131",
+  "password": "fbjvsm6kOGT0MHQPcu7jgA==",
+  "accessToken": "b425b0ff-6cf4-3211-b631-2781d75e4fa9",
+  "broker": "Kotak",
+  "appId": "AlgoTrade",
+  "consumerKey": "dmcJnK2l8Zb7uNhL1CXF8uZDmYoa",
+  "consumerSecrete": "HTwkCHDTB5b6A9zdw3JAbL4tIGQa",
+  "exchange": "NSE",
+  "oneTimeToken": "",
+  "sessionToken": "",
+  "websocketToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkbWNKbksybDhaYjd1TmhMMUNYRjh1WkRtWW9hIiwiaWF0IjoxNjkwNTE5Njc3LCJleHAiOjE2OTA2MDYwNzd9.MRt7hvvV8HVXE4T1fw9MBCxi49rtSbEnMpYMpl46qpo",
+  "dayProfitLimit": {
+    "EQ": "15000",
+    "FNO": "15000"
+  },
+  "dayLossLimit": {
+    "EQ": "7500",
+    "FNO": "7500"
+  },
+  "minTradesPerDay": {
+    "EQ": 0,
+    "FNO": 0
+  },
+  "maxTradesPerDay": {
+    "EQ": 4,
+    "FNO": 2
+  },
+  "isRealTradingEnabled": false,
+  "active": true,
+  "enabledSegments": [
+    "EQ",
+    "FNO"
+  ],
+  "enabledStrategies": [
+    "BIGCANDLE"
+  ],
+  "_class": "com.trade.algotrade.enitiy.UserEntity"
+});
+				  
+db.strategy_master.insert({
+  "_id": 2,
+  "exitCondition": {
+    "conditions": {
+      "SQUARE_OFF_EXECUTION_TIME": "15.27",
+      "DEFAULT_SL_POINT": "30",
+      "DEFAULT_SL_BUFFER_POINT": "15",
+      "BIG_CANDLE_REVERSE_POINTS": "20",
+      "DEFAULT_SL_SPREAD": "30"
+    }
+  },
+  "entryCondition": {
+    "conditions": {
+      "BIG_CANDLE_POINTS": "100",
+      "DEFAULT_QUANTITY": "15"
+    }
+  },
+  "_class": "com.trade.algotrade.enitiy.StrategyEnity",
+  "strategyName": "BIGCANDLE"
+});
+
+db.config_master.insert({
+  "_id": 1,
+  "configurationDetails": {
+    "configs": {
+      "MARKET_MIN_SL_PERCENT": "20",
+      "BROKER_MAX_MODIFICATION_COUNT": "9"
+    }
+  },
+  "createdTime": new Date(),
+  "updatedTime": new Date(),
+  "_class": "com.trade.algotrade.enitiy.ConfigurationEntity"
+});
+					  

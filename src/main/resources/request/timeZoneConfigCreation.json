@@ -1,0 +1,72 @@
+[
+  {
+    "timezone": "GMT",
+    "timezoneKey": "PRE_MARKET_CLOSE_TIME",
+    "timezoneValue": "07:38:00"
+  },
+  {
+    "timezone": "IST",
+    "timezoneKey": "PRE_MARKET_CLOSE_TIME",
+    "timezoneValue": "09:08:00"
+  },
+  {
+    "timezone": "GMT",
+    "timezoneKey": "MARKET_OPEN_TIME",
+    "timezoneValue": "07:45:00"
+  },
+  {
+    "timezone": "IST",
+    "timezoneKey": "MARKET_OPEN_TIME",
+    "timezoneValue": "09:15:00"
+  },
+  {
+    "timezone": "GMT",
+    "timezoneKey": "POST_FIVE_MINUE_MARKET_OPEN_TIME",
+    "timezoneValue": "07:50:00"
+  },
+  {
+    "timezone": "IST",
+    "timezoneKey": "POST_FIVE_MINUE_MARKET_OPEN_TIME",
+    "timezoneValue": "09:20:00"
+  },
+  {
+    "timezone": "GMT",
+    "timezoneKey": "MARKET_CLOSE_TIME",
+    "timezoneValue": "02:00:00"
+  },
+  {
+    "timezone": "IST",
+    "timezoneKey": "MARKET_CLOSE_TIME",
+    "timezoneValue": "03:30:00"
+  },
+  {
+    "timezone": "GMT",
+    "timezoneKey": "PRE_MARKET_OPEN_TIME",
+    "timezoneValue": "07:30:00"
+  },
+  {
+    "timezone": "IST",
+    "timezoneKey": "PRE_MARKET_OPEN_TIME",
+    "timezoneValue": "09:00:00"
+  },
+  {
+    "timezone": "GMT",
+    "timezoneKey": "PRE_FIFTEEN_MIN_MARKET_CLOSE_TIME",
+    "timezoneValue": "01:45:00"
+  },
+  {
+    "timezone": "IST",
+    "timezoneKey": "PRE_FIFTEEN_MIN_MARKET_CLOSE_TIME",
+    "timezoneValue": "03:15:00"
+  },
+  {
+    "timezone": "GMT",
+    "timezoneKey": "PRE_THREE_MIN_MARKET_OPEN_TIME",
+    "timezoneValue": "07:42:00"
+  },
+  {
+    "timezone": "IST",
+    "timezoneKey": "PRE_THREE_MIN_MARKET_OPEN_TIME",
+    "timezoneValue": "09:12:00"
+  }
+]

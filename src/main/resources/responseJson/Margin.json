@@ -1,0 +1,212 @@
+{
+	"Success": {
+		"commodities": [
+			{
+				"exchange": "MCX",
+				"futures": {
+					"additionalOptionBrokerage": 0,
+					"availableCashBalance": 229815.38,
+					"clientGroupLimit": 0,
+					"debtorFlag": 0,
+					"dtv": 0,
+					"dtvBTSTSell": 0,
+					"initialMargin": 0,
+					"marginAvailable": 229815.38,
+					"marginUtilised": 0,
+					"mfLien": 0,
+					"mtm": 0,
+					"nriPinsBalance": 0,
+					"optionPremium": 0,
+					"realizedPL": 0,
+					"securityMargin": 0,
+					"totalMargin": 229815.38
+				},
+				"options": {
+					"additionalOptionBrokerage": 0,
+					"availableCashBalance": 229815.38,
+					"clientGroupLimit": 0,
+					"debtorFlag": 0,
+					"dtv": 0,
+					"dtvBTSTSell": 0,
+					"initialMargin": 0,
+					"marginAvailable": 229815.38,
+					"marginUtilised": 0,
+					"mfLien": 0,
+					"mtm": 0,
+					"nriPinsBalance": 0,
+					"optionPremium": 0,
+					"realizedPL": 0,
+					"securityMargin": 0,
+					"totalMargin": 229815.38
+				}
+			}
+		],
+		"currency": [
+			{
+				"exchange": "NSE",
+				"futures": {
+					"additionalOptionBrokerage": 0,
+					"availableCashBalance": 229815.38,
+					"clientGroupLimit": 0,
+					"debtorFlag": 0,
+					"dtv": 0,
+					"dtvBTSTSell": 0,
+					"initialMargin": 0,
+					"marginAvailable": 229815.38,
+					"marginUtilised": 0,
+					"mfLien": 0,
+					"mtm": 0,
+					"nriPinsBalance": 0,
+					"optionPremium": 0,
+					"realizedPL": 0,
+					"securityMargin": 0,
+					"totalMargin": 229815.38
+				},
+				"options": {
+					"additionalOptionBrokerage": 0,
+					"availableCashBalance": 229815.38,
+					"clientGroupLimit": 0,
+					"debtorFlag": 0,
+					"dtv": 0,
+					"dtvBTSTSell": 0,
+					"initialMargin": 0,
+					"marginAvailable": 229815.38,
+					"marginUtilised": 0,
+					"mfLien": 0,
+					"mtm": 0,
+					"nriPinsBalance": 0,
+					"optionPremium": 0,
+					"realizedPL": 0,
+					"securityMargin": 0,
+					"totalMargin": 229815.38
+				}
+			}
+		],
+		"derivatives": [
+			{
+				"exchange": "NSE",
+				"futures": {
+					"additionalOptionBrokerage": 0,
+					"availableCashBalance": 229815.38,
+					"clientGroupLimit": 0,
+					"debtorFlag": 0,
+					"dtv": 0,
+					"dtvBTSTSell": 0,
+					"initialMargin": 0,
+					"marginAvailable": 229815.38,
+					"marginUtilised": 0,
+					"mfLien": 0,
+					"mtm": 0,
+					"nriPinsBalance": 0,
+					"optionPremium": 0,
+					"realizedPL": 0,
+					"securityMargin": 0,
+					"totalMargin": 229815.38
+				},
+				"options": {
+					"additionalOptionBrokerage": 0,
+					"availableCashBalance": 229815.38,
+					"clientGroupLimit": 0,
+					"debtorFlag": 0,
+					"dtv": 0,
+					"dtvBTSTSell": 0,
+					"initialMargin": 0,
+					"marginAvailable": 229815.38,
+					"marginUtilised": 0,
+					"mfLien": 0,
+					"mtm": 0,
+					"nriPinsBalance": 0,
+					"optionPremium": 0,
+					"realizedPL": 0,
+					"securityMargin": 0,
+					"totalMargin": 229815.38
+				}
+			},
+			{
+				"exchange": "BSE",
+				"futures": {
+					"additionalOptionBrokerage": 0,
+					"availableCashBalance": 0,
+					"clientGroupLimit": 0,
+					"debtorFlag": 0,
+					"dtv": 0,
+					"dtvBTSTSell": 0,
+					"initialMargin": 0,
+					"marginAvailable": 0,
+					"marginUtilised": 0,
+					"mfLien": 0,
+					"mtm": 0,
+					"nriPinsBalance": 0,
+					"optionPremium": 0,
+					"realizedPL": 0,
+					"securityMargin": 0,
+					"totalMargin": 0
+				},
+				"options": {
+					"additionalOptionBrokerage": 0,
+					"availableCashBalance": 0,
+					"clientGroupLimit": 0,
+					"debtorFlag": 0,
+					"dtv": 0,
+					"dtvBTSTSell": 0,
+					"initialMargin": 0,
+					"marginAvailable": 0,
+					"marginUtilised": 0,
+					"mfLien": 0,
+					"mtm": 0,
+					"nriPinsBalance": 0,
+					"optionPremium": 0,
+					"realizedPL": 0,
+					"securityMargin": 0,
+					"totalMargin": 0
+				}
+			}
+		],
+		"equity": [
+			{
+				"cash": {
+					"additionalOptionBrokerage": 0,
+					"availableCashBalance": 229815.38,
+					"clientGroupLimit": 0,
+					"debtorFlag": 0,
+					"dtv": 0,
+					"dtvBTSTSell": 0,
+					"initialMargin": 0,
+					"marginAvailable": 229815.38,
+					"marginUtilised": 0,
+					"mfLien": 0,
+					"mtm": 0,
+					"nriPinsBalance": 0,
+					"optionPremium": 0,
+					"realizedPL": 0,
+					"securityMargin": 0,
+					"totalMargin": 229815.38
+				},
+				"exchange": "NSE,BSE",
+				"mis": {
+					"misCutOff": 0,
+					"misPnl": 0,
+					"refreshTime": 15
+				},
+				"mtf": {
+					"additionalOptionBrokerage": 0,
+					"availableCashBalance": 0,
+					"clientGroupLimit": 0,
+					"debtorFlag": 0,
+					"dtv": 0,
+					"dtvBTSTSell": 0,
+					"initialMargin": 0,
+					"marginAvailable": 0,
+					"marginUtilised": 0,
+					"mfLien": 0,
+					"mtm": 0,
+					"nriPinsBalance": 0,
+					"optionPremium": 0,
+					"realizedPL": 0,
+					"securityMargin": 0,
+					"totalMargin": 0
+				}
+			}
+		]
+	}
+}

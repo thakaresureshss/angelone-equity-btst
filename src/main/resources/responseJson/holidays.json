@@ -1,0 +1,268 @@
+[
+	{
+		"holidayDate": "26-Jan-2023",
+		"holidayDay": "Thursday",
+		"description": "Republic Day",
+		"segment": "EQ",
+		"Sr_no": 1
+	},
+	{
+		"holidayDate": "18-Feb-2023",
+		"holidayDay": "Saturday",
+		"description": "Mahashivratri",
+		"segment": "EQ",
+		"Sr_no": 2
+	},
+	{
+		"holidayDate": "07-Mar-2023",
+		"holidayDay": "Tuesday",
+		"description": "Holi",
+		"segment": "EQ",
+		"Sr_no": 3
+	},
+	{
+		"holidayDate": "30-Mar-2023",
+		"holidayDay": "Thursday",
+		"description": "Ram Navami",
+		"segment": "EQ",
+		"Sr_no": 4
+	},
+	{
+		"holidayDate": "04-Apr-2023",
+		"holidayDay": "Tuesday",
+		"description": "Mahavir Jayanti",
+		"segment": "EQ",
+		"Sr_no": 5
+	},
+	{
+		"holidayDate": "07-Apr-2023",
+		"holidayDay": "Friday",
+		"description": "Good Friday",
+		"segment": "EQ",
+		"Sr_no": 6
+	},
+	{
+		"holidayDate": "14-Apr-2023",
+		"holidayDay": "Friday",
+		"description": "Dr. Baba Saheb Ambedkar Jayanti",
+		"segment": "EQ",
+		"Sr_no": 7
+	},
+	{
+		"holidayDate": "22-Apr-2023",
+		"holidayDay": "Saturday",
+		"description": "Id-Ul-Fitr (Ramzan ID)",
+		"segment": "EQ",
+		"Sr_no": 8
+	},
+	{
+		"holidayDate": "01-May-2023",
+		"holidayDay": "Monday",
+		"description": "Maharashtra Day",
+		"segment": "EQ",
+		"Sr_no": 9
+	},
+	{
+		"holidayDate": "28-Jun-2023",
+		"holidayDay": "Wednesday",
+		"description": "Bakri Id",
+		"segment": "EQ",
+		"Sr_no": 10
+	},
+	{
+		"holidayDate": "29-Jul-2023",
+		"holidayDay": "Saturday",
+		"description": "Moharram",
+		"segment": "EQ",
+		"Sr_no": 11
+	},
+	{
+		"holidayDate": "15-Aug-2023",
+		"holidayDay": "Tuesday",
+		"description": "Independence Day",
+		"segment": "EQ",
+		"Sr_no": 12
+	},
+	{
+		"holidayDate": "19-Sep-2023",
+		"holidayDay": "Tuesday",
+		"description": "Ganesh Chaturthi",
+		"segment": "EQ",
+		"Sr_no": 13
+	},
+	{
+		"holidayDate": "02-Oct-2023",
+		"holidayDay": "Monday",
+		"description": "Mahatma Gandhi Jayanti",
+		"segment": "EQ",
+		"Sr_no": 14
+	},
+	{
+		"holidayDate": "24-Oct-2023",
+		"holidayDay": "Tuesday",
+		"description": "Dussehra",
+		"segment": "EQ",
+		"Sr_no": 15
+	},
+	{
+		"holidayDate": "12-Nov-2023",
+		"holidayDay": "Sunday",
+		"description": "Diwali-Laxmi Pujan*",
+		"segment": "EQ",
+		"Sr_no": 16
+	},
+	{
+		"holidayDate": "14-Nov-2023",
+		"holidayDay": "Tuesday",
+		"description": "Diwali-Balipratipada",
+		"segment": "EQ",
+		"Sr_no": 17
+	},
+	{
+		"holidayDate": "27-Nov-2023",
+		"holidayDay": "Monday",
+		"description": "Gurunanak Jayanti",
+		"segment": "EQ",
+		"Sr_no": 18
+	},
+	{
+		"holidayDate": "25-Dec-2023",
+		"holidayDay": "Monday",
+		"description": "Christmas",
+		"segment": "EQ",
+		"Sr_no": 19
+	},
+	{
+		"holidayDate": "26-Jan-2023",
+		"holidayDay": "Thursday",
+		"description": "Republic Day",
+		"segment": "FNO",
+		"Sr_no": 1
+	},
+	{
+		"holidayDate": "18-Feb-2023",
+		"holidayDay": "Saturday",
+		"description": "Mahashivratri",
+		"segment": "FNO",
+		"Sr_no": 2
+	},
+	{
+		"holidayDate": "07-Mar-2023",
+		"holidayDay": "Tuesday",
+		"description": "Holi",
+		"segment": "FNO",
+		"Sr_no": 3
+	},
+	{
+		"holidayDate": "30-Mar-2023",
+		"holidayDay": "Thursday",
+		"description": "Ram Navami",
+		"segment": "FNO",
+		"Sr_no": 4
+	},
+	{
+		"holidayDate": "04-Apr-2023",
+		"holidayDay": "Tuesday",
+		"description": "Mahavir Jayanti",
+		"segment": "FNO",
+		"Sr_no": 5
+	},
+	{
+		"holidayDate": "07-Apr-2023",
+		"holidayDay": "Friday",
+		"description": "Good Friday",
+		"segment": "FNO",
+		"Sr_no": 6
+	},
+	{
+		"holidayDate": "14-Apr-2023",
+		"holidayDay": "Friday",
+		"description": "Dr. Baba Saheb Ambedkar Jayanti",
+		"segment": "FNO",
+		"Sr_no": 7
+	},
+	{
+		"holidayDate": "22-Apr-2023",
+		"holidayDay": "Saturday",
+		"description": "Id-Ul-Fitr (Ramzan ID)",
+		"segment": "FNO",
+		"Sr_no": 8
+	},
+	{
+		"holidayDate": "01-May-2023",
+		"holidayDay": "Monday",
+		"description": "Maharashtra Day",
+		"segment": "FNO",
+		"Sr_no": 9
+	},
+	{
+		"holidayDate": "28-Jun-2023",
+		"holidayDay": "Wednesday",
+		"description": "Bakri Id",
+		"segment": "FNO",
+		"Sr_no": 10
+	},
+	{
+		"holidayDate": "29-Jul-2023",
+		"holidayDay": "Saturday",
+		"description": "Moharram",
+		"segment": "FNO",
+		"Sr_no": 11
+	},
+	{
+		"holidayDate": "15-Aug-2023",
+		"holidayDay": "Tuesday",
+		"description": "Independence Day",
+		"segment": "FNO",
+		"Sr_no": 12
+	},
+	{
+		"holidayDate": "19-Sep-2023",
+		"holidayDay": "Tuesday",
+		"description": "Ganesh Chaturthi",
+		"segment": "FNO",
+		"Sr_no": 13
+	},
+	{
+		"holidayDate": "02-Oct-2023",
+		"holidayDay": "Monday",
+		"description": "Mahatma Gandhi Jayanti",
+		"segment": "FNO",
+		"Sr_no": 14
+	},
+	{
+		"holidayDate": "24-Oct-2023",
+		"holidayDay": "Tuesday",
+		"description": "Dussehra",
+		"segment": "FNO",
+		"Sr_no": 15
+	},
+	{
+		"holidayDate": "12-Nov-2023",
+		"holidayDay": "Sunday",
+		"description": "Diwali-Laxmi Pujan*",
+		"segment": "FNO",
+		"Sr_no": 16
+	},
+	{
+		"holidayDate": "14-Nov-2023",
+		"holidayDay": "Tuesday",
+		"description": "Diwali-Balipratipada",
+		"segment": "FNO",
+		"Sr_no": 17
+	},
+	{
+		"holidayDate": "27-Nov-2023",
+		"holidayDay": "Monday",
+		"description": "Gurunanak Jayanti",
+		"segment": "FNO",
+		"Sr_no": 18
+	},
+	{
+		"holidayDate": "25-Dec-2023",
+		"holidayDay": "Monday",
+		"description": "Christmas",
+		"segment": "FNO",
+		"Sr_no": 19
+	}
+]

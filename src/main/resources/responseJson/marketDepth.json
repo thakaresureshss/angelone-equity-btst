@@ -1,0 +1,65 @@
+{
+	"success": {
+		"depth": [
+			{
+				"buy": [
+					{
+						"price": "0",
+						"quantity": "0",
+						"orders": "0"
+					},
+					{
+						"price": "0",
+						"quantity": "0",
+						"orders": "0"
+					},
+					{
+						"price": "0",
+						"quantity": "0",
+						"orders": "0"
+					},
+					{
+						"price": "0",
+						"quantity": "0",
+						"orders": "0"
+					},
+					{
+						"price": "0",
+						"quantity": "0",
+						"orders": "0"
+					}
+				],
+				"sell": [
+					{
+						"price": "0",
+						"quantity": "0",
+						"orders": "0"
+					},
+					{
+						"price": "0",
+						"quantity": "0",
+						"orders": "0"
+					},
+					{
+						"price": "0",
+						"quantity": "0",
+						"orders": "0"
+					},
+					{
+						"price": "0",
+						"quantity": "0",
+						"orders": "0"
+					},
+					{
+						"price": "0",
+						"quantity": "0",
+						"orders": "0"
+					}
+				],
+				"stk_strike_price": 0,
+				"upper_ckt_limit": "",
+				"lower_ckt_limit": ""
+			}
+		]
+	}
+}

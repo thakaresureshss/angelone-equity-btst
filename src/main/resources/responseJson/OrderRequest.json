@@ -1,0 +1,26 @@
+{
+	"userIds": [
+		"ST27101989"
+	],
+	"transactionType": "BUY",
+	"quantity": 100,
+	"price": 100,
+	"strikePrice": 43800,
+	"product": "NORMAL",
+	"validity": "GFD",
+	"variety": "REGULAR",
+	"tag": "MANUAL-SCALPING",
+	"slDetails": {
+		"slPercent": 1.5,
+		"trailSl": true
+	},
+	"targetDetails": {
+		"targetPercent": 3,
+		"target": true
+	},
+	"strategyName": "SCALPING",
+	"instrumentName": "BANKNIFTY",
+	"optionType": "CE",
+	"orderType": "MARKET",
+	"segment": "FNO"
+}

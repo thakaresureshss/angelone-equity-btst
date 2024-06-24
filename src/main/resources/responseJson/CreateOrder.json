@@ -1,0 +1,11 @@
+{
+	"Success": {
+		"NSE": {
+			"message": "Your Order has been Placed and Forwarded to the Exchange: 2230331178743. ",
+			"orderId": 2230331178743,
+			"price": 80,
+			"quantity": 25,
+			"tag": "NA"
+		}
+	}
+}

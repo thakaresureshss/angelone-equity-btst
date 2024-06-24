@@ -1,0 +1,26 @@
+{
+	"strategyName": "EXPIRY",
+	"exitCondition": {
+		"conditions": {
+			"TARGETED_PROFIT_PERCENT": "100",
+			"TARGETED_LOSS_PERCENT": "50",
+			"TARGETED_PROFIT_POINT": "10",
+			"TARGETED_LOSS_POINT": "5",
+			"SQUARE_OFF_EXECUTION_TIME": "15.27",
+			"DEFAULT_SL_POINT":"5",
+			"DEFAULT_SL_PERCENT":"50",
+			"DEFAULT_SL_BUFFER_POINT":"2"
+		}
+	},
+	"entryCondition": {
+		"conditions": {
+			"DEFAULT_QUANTITY": "25",
+			"LAST_ORDER_QUANTITY": "0",
+			"EXECUTION_TIME": "15.05"
+
+		}
+	},
+	"noOfTargetCompletedOrders": 0,
+	"noOfSlOrders": 0,
+	"successRatio": 0.0
+}

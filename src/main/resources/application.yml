@@ -1,0 +1,127 @@
+server:
+  port: ${SERVER_PORT:8081}
+  servlet:
+    session:
+      timeout: 300s
+  error:
+    include-message: ALWAYS
+    include-binding-errors: ALWAYS
+    include-stacktrace: ON_PARAM
+logging:
+  level:
+    liquibase: info
+    org.springframework.web: INFO
+    org.springframework.web.client.RestTemplate: INFO
+    org.springframework.security: INFO
+    com.trade.algotrade: ${APP_LOG_LEVEL:INFO}
+  path :
+    log
+  file:
+    name: ${logging.path}/algotrade_logs.log
+    max-size: 25MB
+  pattern:
+    file: "%d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36}.%M - %msg%n"
+    console : "%d{dd-MM-yyyy HH:mm:ss.SSS} %magenta([%thread]) %highlight(%-5level) %logger.%M - %msg%n"
+
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+application:
+  candle:
+    timeframe: ${APPLICATION_CANDLE_TIME_FRAME:15}
+  stockCandle:
+    timeframe: 5
+  kotakclient:
+    baseurl: ${KOTAK_CLIENT_BASE_URL:https://tradeapi.kotaksecurities.com/apim}
+    webSocketUrl: ${KOTAK_CLIENT_WEBSOCKET_BASE_URL:https://wstreamer.kotaksecurities.com}
+  angelOneClient:
+    baseurl: ${ANGELONE_CLIENT_BASE_URL:https://apiconnect.angelbroking.com/rest}
+    webSocketUrl: ${KOTAK_CLIENT_WEBSOCKET_BASE_URL:https://wstreamer.kotaksecurities.com}
+  nseClient:
+    url: ${NSE_BASE_URL:https://www.nseindia.com}
+  symmetric:
+    key: ${SYMMETRIC_KEY:0rSQ52XTJRLj4uNQvmwXiA==}
+  mongodbTools: ${MONGODB_TOOLS_PATH:C:/softwares/tools}
+spring:
+  main:
+    allow-circular-references: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  cache:
+    jcache:
+      config: classpath:ehcache.xml
+  data:
+    jpa:
+      repositories.enabled: true
+    mongodb:
+      uri: ${MONGODB_URL_STRING:mongodb://localhost:27017/dev_algotrade}
+      auto-index-creation: ${AUTO_INDEX_CREATION:true}
+  jpa:
+    show-sql: false
+    hibernate:
+      ogm:
+        datastore:
+          create_database: ${JPA_CREATE_DATABASE:false}
+  cloud:
+    compatibility-verifier:
+      enabled: false
+scheduler:
+  holiday:
+    download:
+      interval: ${NSE_HOLIDAY_SCHEDULER_INTERVAL:0 0 4,5,7 1 1 ?} # Every Year 1 JAN 4,5,7 AM
+    clear:
+      interval: ${CLEAR_NSE_HOLIDAY_SCHEDULER_INTERVAL:0 0 1 1 1 ?} # Every Year 1 JAN 1 AM
+  download-instrument:
+    interval: ${DOWNLOAD_INSTRUMENT_SCHEDULER_INTERVAL:0 35 7  * * 0-5} # 7.35 GMT, 9.05 AM IST
+  equityDayOpen-close:
+    interval: ${EQUITY_DAY_OPEN_CLOSE_SCHEDULER_INTERVAL:0 39 7,14  * * 0-5} # 7.39 GMT, 9.09 AM IST
+  kotak-login:
+    interval: ${LOGIN_SCHEDULER_INTERVAL:0 43 7 * * 0-5} # 7.43 AM GMT, 9.13 AM IST
+  margin:
+    interval: ${MARGIN_SCHEDULER_INTERVAL:0 30 7 * * 0-5} # 7.30 AM GMT 9.00 AM IST
+  intra-day:
+    interval: ${INTRA_DAY_SCHEDULER_INTERVAL:0 43 7  * * 0-5} # 7.43 GMT, 9.13 AM IST
+  websocket:
+    interval: ${KOTAK_WEBSOCKET_SCHEDULER_INTERVAL:57 44 7 * * 0-5} # 7.45 GMT, 9.15 AM IST
+  intra-dayTrade:
+    interval: ${INTRA_DAY_TRADE_SCHEDULER_INTERVAL:0 51 7  * * 0-5} # 7.50 GMT, 9.20 AM IST
+  expiry-strategy:
+    interval: ${EXPIRY_STRATEGY_SCHEDULER_INTERVAL:0 35 13 * * 0-5} # 1.35 GMT 3.05 PM IST
+  cancelExpiryOrders:
+    interval: ${CANCEL_EXPIRY_OPEN_ORDERS_SCHEDULER_INTERVAL:0 40 13 * * 0-5} # 1.40 GMT 3.10 PM IST
+  squareoffExpiryOrder:
+    interval: ${SQUAREOFF_EXPIRY_ORDER_SCHEDULER_INTERVAL:0 57 13 * * 0-5} # 1.57 GMT 3.27 PM IST
+  order-history:
+    interval: ${ORDER_HISTORY_SCHEDULER_INTERVAL:0 5 14 * * 0-5}  # 2.05 GMT, 3.35 AM IST
+  clear-static-data:
+    interval: ${CLEAR_STATIC_DATA_SCHEDULER_INTERVAL:0 30 7,14 * * 0-5}  # 2 PM GMT 3.30 PM IST
+  eod-process:
+    interval: ${EOD_PROCESS_SCHEDULER_INTERVAL:0 30 15 * * 0-5} # 2.00 PM GMT 3.30 PM IST
+  angelone-login:
+    interval: ${ANGELONE_LOGIN_SCHEDULER_INTERVAL:0 13 9 * * 0-5}
+  news-spike:
+    interval: ${EOD_DAY_EQUITY_SCAN_INTERVAL:0 27 15  * * 0-5} # 7.39 GMT, 9.09 AM IST
+  open-interest:
+    interval: ${OPEN_INTEREST_INTERVAL:0 05 9  * * 0-5} # 7.39 GMT, 9.09 AM IST
+  angelone-websocket:
+    reconnect-interval: ${WEBSOCKET_RECONNECT_INTERVAL:15,0 */5 10-15  * * 0-5} # 7.39 GMT, 9.09 AM IST
+  bnf-spike-notification:
+    interval: ${BNF_SPIKE_NOTIFICATION_INTERVAL:15,0 */5 10-15  * * 0-5} # 7.39 GMT, 9.09 AM IST
+  bnf-bigmove:
+    interval: ${BNF_BIGMOVE_INTERVAL:0 0 11  * * 0-5} #11 AM IST
+  order-cache:
+    interval: ${ORDER_CACHE_INTERVAL:0 12 9  * * 0-5} # 9.12 AM IST
+flag:
+  aftermarketsTest: ${OFF_MARKET_HOURS_TEST_FLAG:false}
+  trailPriceFlag: ${TRAIL_PRICE_FLAG:false}
+  maxTrailPoints: ${MAX_TRAIL_PRICE_POINTS:100}
+  maxPriceDropPoints: ${MAX_PRICE_DROP_POINTS:60}
+  websocket:
+    onFlag: ${ORDER_FEED_WEBSOCKET_ON_FLAG:false}
+
+notification:
+  telegram:
+    url: https://api.telegram.org
+    context: bot6806841092:AAFkH2axV-Tyj1EdCUPgEsyKvxujNW3HEOE

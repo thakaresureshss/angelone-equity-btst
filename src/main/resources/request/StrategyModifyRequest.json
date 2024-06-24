@@ -1,0 +1,20 @@
+{
+	"strategyname": "EXPIRY",
+	"exitCondition": {
+		"conditions": {
+			"TARGETED_PROFIT_PERCENT": "100",
+			"TARGETED_LOSS_PERCENT": "50",
+			"TARGETED_SQUAREOFF_TIME": "15.27"
+		}
+	},
+	"entryCondition": {
+		"conditions": {
+			"DEFAULT_QUANTITY": "200",
+			"LAST_ORDER_QANTITY": "0",
+			"EXECUTION_TIME": "15.05"
+		}
+	},
+	"noOfTargetCompletedOrders": 0,
+	"noOfSlOrders": 0,
+	"successRatio": 0.0
+}

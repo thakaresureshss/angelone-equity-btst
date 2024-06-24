@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Live Feed - Websocket</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+	<h2>Live Feed Test Page - Kotak Securities</h2>
+	<b>Websocket status: </b>
+	<span id="wss"></span> [
+	<span id="wssmsg"></span>]
+	<br>
+	<br>Consumer Key:
+	<input type="text" id="key">
+	<br>
+	<br>Consumer Secret:
+	<input type="password" id="secret">
+	<br>
+	<br>
+	<input type="button" id="generate" value="Generate New Access Token">
+	<br>
+	<br>Access token:
+	<textarea id="token" rows="2" cols="90"></textarea>
+	<br>
+	<br>
+	<span>-----------------------------------------------------------</span>
+	<br>
+	<br>
+	<input type="button" id="market-connect" value="Connect Market Feed">
+	<br>
+	<br>Wtoken(s):
+	<input type="text" id="wtokens"> Type multiple tokens comma (,)
+	separated
+	<br>
+	<br>
+	<input type="button" id="send-token" value="Send Wtoken">
+	<br>
+	<br>
+	<textarea rows="15" cols="100" id="text0"></textarea>
+	<br>
+	<br>
+	<span>-----------------------------------------------------------</span>
+	<br>
+	<br>
+	<input type="button" id="order-connect" value="Connect Order Feed">
+	<br>
+	<br>
+	<textarea rows="15" cols="100" id="text1"></textarea>
+	<br>
+	<br>
+	<h5>It is a sample page to test and understand market/order feed
+		connection.</h5>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/socket.io-client@2.0.0/dist/socket.io.min.js"></script>
+	<script> 
+	$.get("https://wstreamer.kotaksecurities.com/feed", function() {}).done(function(data) {
+	    var status = JSON.parse(JSON.stringify(data));
+	    if (status.status == 'success') {
+	        $("#wss").html('Running');
+	        $("#wssmsg").html(status.result.msg);
+	    } else {
+	        $("#wss").html('Not Running');
+	    }
+	}).fail(function() {
+	    $("#wss").html('Not Running');
+	    $('#text0').append('Websocket not running\n');
+	    $('#text1').append('Websocket not running\n');
+	});
+	
+	$("#generate").click(function() {
+	    if ($('#key').val() && $('#key').val()) {
+	        $.post("https://wstreamer.kotaksecurities.com/feed/auth/token", {
+	            "authentication": btoa($('#key').val() + ":" + $('#secret').val())
+	        }, function(data) {
+	            $("#token").val(data.result.token);
+	        }).fail(function() {
+	            $('#text0').append('Failed to generate new access token, please generate manually.\n');
+	            $('#text0').append('Document: https://tradeapi.kotaksecurities.com/devportal/apis/a38b95f8-c52e-4037-a8d0-12c12e2efff7/documents/d28010af-483a-4d02-9dc8-917df4f357e2\n');
+	            $('#text1').append('Failed to generate new access token, please generate manually.\n');
+	            $('#text1').append('Document: https://tradeapi.kotaksecurities.com/devportal/apis/a38b95f8-c52e-4037-a8d0-12c12e2efff7/documents/d28010af-483a-4d02-9dc8-917df4f357e2\n');
+	        });
+	    } else {
+	        $('#token').val("Invalid credentials");
+	    }
+	});
+	var socket = null;
+
+
+	$("#market-connect").click(function() {
+	    if ($('#token').val()) {
+	        $('#text0').append('Connecting...\n');
+	        socket = io("https://wstreamer.kotaksecurities.com/?access_token=" + $('#token').val(), {
+	            path: "/feed",
+	            transports: ['websocket', 'polling']
+	        });
+	        socket.on("connect", () => {
+	            console.log(socket.id + "connected");
+	            $('#text0').append('Connected.\n');
+	        });
+
+	        socket.on("disconnect", () => {
+	            console.log(socket.id + "disconnected");
+	            $('#text0').append('Disconnected.\n');
+	        });
+
+	        socket.on('error', function(msg) {
+	            $('#text0').append('Socket connection failed\n');
+	        });
+
+	        socket.on('broadcast', function(msg) {
+	            $('#text0').append(msg + '\n');
+	        });
+	        socket.on('getdata', function(msg) {
+	            $('#text0').append(msg + '\n');
+	        });
+	        if ($('#wtokens').val()) {
+	            socket.emit('pageload', {
+	                "inputtoken": $('#wtokens').val()
+	            });
+	        }
+	    } else {
+	        $('#text0').append("Invalid access token" + '\n');
+	    }
+	});
+	$("#send-token").click(function() {
+	    if ($('#wtokens').val()) {
+	        $('#text0').append('Sending...\n');
+	        socket.emit('pageload', {
+	            "inputtoken": $('#wtokens').val()
+	        });
+	        $('#text0').append('Sent\n');
+	        $('#text0').append('Is market open?\n');
+	    } else {
+	        $('#text0').append("Require atleast one wtoken" + '\n');
+	    }
+	});
+	$("#order-connect").click(function() {
+	    if ($('#token').val()) {
+	        $('#text1').append('Connecting...\n');
+	        const socket = io("https://wstreamer.kotaksecurities.com/?access_token=" + $('#token').val(), {
+	            path: "/feed/orders",
+	            transports: ['websocket', 'polling']
+	        });
+	        socket.on("connect", () => {
+	            console.log(socket.id + "connected");
+	            $('#text1').append('Connected.\n');
+	        });
+	        socket.on("disconnect", () => {
+	            console.log(socket.id + "disconnected");
+	            $('#text1').append('Disconnected.\n');
+	        });
+	        socket.on('error', function(msg) {
+	            $('#text1').append('Socket connection failed\n');
+	        });
+	        socket.on('broadcast', function(msg) {
+	            $('#text1').append(msg + '\n');
+	        });
+	        socket.on('getdata', function(msg) {
+	            var odata = JSON.stringify(msg);
+	            $('#text1').append(odata + '\n');
+	        });
+	    } else {
+	        $('#text1').append("Invalid access token" + '\n');
+	    }
+	});
+	</script>
+</body>
+</html>

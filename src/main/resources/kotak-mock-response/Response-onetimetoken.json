@@ -1,0 +1,20 @@
+{
+	"Success": {
+		"Status": "Temporary",
+		"accessCodeTime": "3/18/2023 12:43:00 AM",
+		"authLevel": 2,
+		"biometric": "N",
+		"clientType": "ONLINE",
+		"emailId": "thXXXXXXXXXXXss@gmail.com",
+		"message": "Authentication Successful.",
+		"mpin": "N",
+		"nomineeFlag": 0,
+		"oneTimeToken": "CD16D99C168C8C0E565FF23E61784956F53DE3C65B6D7FBC53B40C",
+		"phoneNo": "XXXXXXX285",
+		"redirect": {
+			"host": "https://tradeapi.kotaksecurities.com/apim",
+			"port": 443
+		},
+		"userid": "ST27101989"
+	}
+}

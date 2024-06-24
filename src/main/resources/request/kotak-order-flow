@@ -1,0 +1,195 @@
+Kotak Responses:
+
+Kotak Request Limit Order
+{
+	"instrumentToken": 17576,
+	"transactionType": "BUY",
+	"quantity": 15,
+	"price": 100,
+	"product": "NORMAL",
+	"validity": "GFD",
+	"variety": "REGULAR",
+	"disclosedQuantity": 0,
+	"triggerPrice": 0,
+	"tag": "Test"
+}
+
+Kotak Response
+{
+    "Success": {
+        "NSE": {
+            "message": "Your Order has been Placed and Forwarded to the Exchange: 1230721082323. ",
+            "orderId": 1230721082323,
+            "price": 100,
+            "quantity": 15,
+            "tag": "Test"
+        }
+    }
+}
+
+Cancel Order :
+
+{
+    "Success": {
+        "NSE": {
+            "message": "Your Order for BANKNIFTY OI NSE 27JUL23 45500.00 PE has been Cancelled Successfully for Order No : 1230721082323",
+            "orderId": 1230721082323,
+            "price": 0,
+            "quantity": 0,
+            "tag": ""
+        }
+    }
+}
+
+
+Markt Order : Place new order
+Kotak Request:
+{
+	"instrumentToken": 17576,
+	"transactionType": "BUY",
+	"quantity": 15,
+	"price": 0,
+	"product": "NORMAL",
+	"validity": "GFD",
+	"variety": "REGULAR",
+	"disclosedQuantity": 0,
+	"triggerPrice": 0,
+	"tag": "Test"
+}
+
+Order Created Successfully :
+Kotak Response:
+{
+    "Success": {
+        "NSE": {
+            "message": "Your Order has been Placed and Forwarded to the Exchange: 1230721074861. ",
+            "orderId": 1230721074861,
+            "price": 0,
+            "quantity": 15,
+            "tag": "Test"
+        }
+    }
+}
+
+
+Tried to Cancel Order  : Failure because Market Orer is executed:
+Kotak Response:
+{
+    "fault": {
+        "code": 5057,
+        "description": "-",
+        "message": "Failure. You can not cancel the Order. It is already TRADED"
+    }
+}
+
+
+Tried to add SL Order :   Success
+Kotak Request:
+{
+	"instrumentToken": 17576,
+	"transactionType": "SELL",
+	"quantity": 15,
+	"price":90,
+	"product": "NORMAL",
+	"validity": "GFD",
+	"variety": "REGULAR",
+	"disclosedQuantity": 0,
+	"triggerPrice": 100,
+	"tag": "Test"
+}
+
+Kotak Response:
+{
+    "Success": {
+        "NSE": {
+            "message": "Your Order has been Placed and Forwarded to the Exchange: 1230721078205. ",
+            "orderId": 1230721078205,
+            "price": 90,
+            "quantity": 15,
+            "tag": "Test"
+        }
+    }
+}
+
+Try to Modify SL Modification:
+Kotak Request:
+{
+    "orderId": "1230721078205",
+    "quantity": 15,
+    "price": 92,
+    "disclosedQuantity": 0,
+    "triggerPrice": 102,
+    "product": "NORMAL",
+    "validity": "GFD",
+    "variety": "REGULAR"
+}
+
+Kotak Response:
+{
+    "Success": {
+        "NSE": {
+            "message": "Your Order has been Modified Successfully for Order No : 1230721078205. ",
+            "orderId": 1230721078205,
+            "price": 92,
+            "quantity": 15,
+            "tag": "Test"
+        }
+    }
+}
+
+
+SL to Market Order :   Success
+
+Kotak Request:
+
+{
+    "orderId": "1230721078205",
+    "quantity": 15,
+    "price": 0,
+    "disclosedQuantity": 0,
+    "triggerPrice": 0,
+    "product": "NORMAL",
+    "validity": "GFD",
+    "variety": "REGULAR"
+}
+
+Kotak Response :
+{
+    "Success": {
+        "NSE": {
+            "message": "Your Order has been Modified Successfully for Order No : 1230721078205. ",
+            "orderId": 1230721078205,
+            "price": 0,
+            "quantity": 15,
+            "tag": "Test"
+        }
+    }
+}
+
+
+
+BUY LIMIT with SL with Target : Not working
+
+{
+	"instrumentToken": 17576,
+	"transactionType": "BUY",
+	"quantity": 15,
+	"price": 112,
+	"product": "NORMAL",
+	"validity": "GFD",
+	"variety": "REGULAR",
+	"disclosedQuantity": 0,
+	"triggerPrice": 98,
+	"tag": "Test"
+}
+{
+    "Success": {
+        "NSE": {
+            "message": "Your Order has been Placed and Forwarded to the Exchange: 1230721118393. ",
+            "orderId": 1230721118393,
+            "price": 112,
+            "quantity": 15,
+            "tag": "Test"
+        }
+    }
+}

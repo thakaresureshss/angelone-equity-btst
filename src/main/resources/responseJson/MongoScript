@@ -1,0 +1,15 @@
+Delete All Entries From DB :
+	db.candle_data.deleteMany({})
+	
+Create Composite Key in MongoDB
+	db.candle_data.createIndex( { stockSymbol: 1, candleStart: 1}, { unique: true } )
+
+Create Unique Key in MongoDB : margins
+	db.margins.createIndex( { userId: 1}, { unique: true } )
+	
+Create Unique Key in MongoDB : instrument_master
+	db.instrument_master.createIndex( { instrumentToken: 1}, { unique: true } )
+	
+	
+Create Unique Key in MongoDB : instrument_watch_master
+	db.instrument_watch_master.createIndex( { instrumentToken: 1}, { unique: true } )

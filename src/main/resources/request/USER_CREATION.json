@@ -1,0 +1,42 @@
+{
+  "id": 1,
+  "userId": "USERID/CLIENTID",
+  "password": "PIN/PASSWORD",
+  "accessToken": "",
+  "broker": "ANGELEONE",
+  "appId": "AlgoTrade",
+  "consumerKey": "ClientId",
+  "consumerSecrete": "ClientSecrete",
+  "exchange": "NSE",
+  "oneTimeToken": "",
+  "sessionToken": "",
+  "isTOTPEnabled": true,
+  "totpSecrete": "VUYQ36S3IGBI5LQ3ZUTK7JOIXU",
+  "isRealTradingEnabled": false,
+  "active": true,
+  "enabledStrategies": [
+    "BIGCANDLE",
+    "EXPIRY",
+    "EQUITY_TOP_MOVERS"
+  ],
+  "enabledSegments": [
+    "EQ",
+    "FNO"
+  ],
+  "dayProfitLimit": {
+    "EQ": 15000,
+    "FNO": 20000
+  },
+  "dayLossLimit": {
+    "EQ": 7500,
+    "FNO": 10000
+  },
+  "minTradesPerDay": {
+    "EQ": 0,
+    "FNO": 0
+  },
+  "maxTradesPerDay": {
+    "EQ": 4,
+    "FNO": 3
+  }
+}

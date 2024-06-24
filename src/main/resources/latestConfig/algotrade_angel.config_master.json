@@ -1,0 +1,23 @@
+[{
+  "_id": 1,
+  "configurationDetails": {
+    "configs": {
+      "MARKET_MIN_SL_PERCENT": "20",
+      "KOTAK_SINGLE_ORDER_QUANTITY_LIMIT": "900",
+      "BIG_CANDLE_TREND_FINDER_TIME_FRAME": "1",
+      "KOTAK_MAX_ORDER_MODIFICATION_COUNT": "9",
+      "BIG_CANDLE_TRADING_END_TIME": "15:15:00",
+      "BIG_CANDLE_TRADING_START_TIME": "01:15:15",
+      "CANDLE_DATA_CAPTURE_START_TIME": "01:00:00",
+      "MARKET_OPEN_TIME": "01:00:00",
+      "MOCK_BANK_NIFTY_CURRENT_VALUE": "48100"
+    }
+  },
+  "createdTime": {
+    "$date": "2023-08-03T18:48:47.489Z"
+  },
+  "updatedTime": {
+    "$date": "2023-08-03T18:48:47.489Z"
+  },
+  "_class": "com.trade.algotrade.enitiy.ConfigurationEntity"
+}]

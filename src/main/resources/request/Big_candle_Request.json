@@ -1,0 +1,36 @@
+{
+  "userIds": [
+    "PO1131"
+  ],
+  "transactionType": "BUY",
+  "quantity": 25,
+  "filledQuantity": 0,
+  "price": 95,
+  "product": "NORMAL",
+  "validity": "GFD",
+  "variety": "REGULAR",
+  "tag": "string",
+  "slDetails": {
+    "spread": 30,
+    "triggerPrice": 100,
+    "trailingStartPrice": 130,
+    "trailSl": true,
+    "slPercent": 0,
+    "slPoints": 15
+  },
+  "targetDetails": {
+    "targetPrice": 150,
+    "targetPercent": 50,
+    "target": true
+  },
+  "strategyName": "BIGCANDLE",
+  "instrumentName": "BANKNIFTY",
+  "instrumentToken": 17073,
+  "strikePrice": 31500,
+  "optionType": "CE",
+  "orderType": "MARKET",
+  "segment": "FNO",
+  "orderCategory": "NEW",
+  "originalOrderId": 0,
+  "triggerType": "AUTO"
+}

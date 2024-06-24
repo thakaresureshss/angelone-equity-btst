@@ -1,0 +1,40 @@
+ {
+	"id": 1,
+	"userId": "ST27101989",
+	"password": "RANDOM@143",
+	"accessToken": "ca89e510-bc38-37f5-97a4-a98cf968770e",
+	"broker": "KOTAK",
+	"appId": "AlgoTrade",
+	"consumerKey": "0RAnRHT4hCBaTeqegWf02XpMfG4a",
+	"consumerSecrete": "OeJGEhFuDtjLf__d0jOmUF7Lo7ca",
+	"exchange": "NSE",
+	"oneTimeToken": "",
+	"sessionToken": "",
+	"isRealTradingEnabled": false,
+	"active": true,
+	"enabledStrategies": [
+		"BIGCANDLE",
+		"EXPIRY",
+		"EQUITY_TOP_MOVERS"
+	],
+	"enabledSegments": [
+		"EQ",
+		"FNO"
+	],
+	"dayProfitLimit": {
+		"EQ": 15000,
+		"FNO": 20000
+	},
+	"dayLossLimit": {
+		"EQ": 7500,
+		"FNO": 10000
+	},
+	"minTradesPerDay": {
+		"EQ": 0,
+		"FNO": 0
+	},
+	"maxTradesPerDay": {
+		"EQ": 4,
+		"FNO": 3
+	}
+}

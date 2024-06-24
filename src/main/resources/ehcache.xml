@@ -1,0 +1,195 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.ehcache.org/v3"
+        xmlns:jsr107="http://www.ehcache.org/v3/jsr107"
+        xsi:schemaLocation="
+            http://www.ehcache.org/v3 http://www.ehcache.org/schema/ehcache-core-3.0.xsd
+            http://www.ehcache.org/v3/jsr107 http://www.ehcache.org/schema/ehcache-107-ext-3.0.xsd">
+
+    <cache alias="holidays">
+        <expiry>
+            <ttl unit="days">
+                365
+            </ttl>
+        </expiry>
+        <resources>
+            <heap unit="entries">150</heap>
+        </resources>
+    </cache>
+
+    <cache alias="kotaklogin">
+        <expiry>
+            <ttl unit="days">1</ttl>
+        </expiry>
+        <resources>
+            <heap unit="entries">1000</heap>
+        </resources>
+    </cache>
+    <cache alias="instrumentMasters">
+        <expiry>
+            <ttl unit="days">
+                1
+            </ttl>
+        </expiry>
+        <resources>
+            <heap unit="entries">1000</heap>
+        </resources>
+    </cache>
+    <cache alias="angelOneInstrumentMasters">
+        <expiry>
+            <ttl unit="days">
+                1
+            </ttl>
+        </expiry>
+        <resources>
+            <heap unit="entries">1000</heap>
+        </resources>
+    </cache>
+
+    <cache alias="users">
+        <expiry>
+            <ttl unit="days">
+                365
+            </ttl>
+        </expiry>
+        <resources>
+            <heap unit="entries">10</heap>
+        </resources>
+    </cache>
+
+    <cache alias="userEntities">
+        <expiry>
+            <ttl unit="days">
+                365
+            </ttl>
+        </expiry>
+        <resources>
+            <heap unit="entries">20</heap>
+        </resources>
+    </cache>
+    <cache alias="candle">
+        <expiry>
+            <ttl unit="days">
+                365
+            </ttl>
+        </expiry>
+        <resources>
+            <heap unit="entries">300</heap>
+        </resources>
+    </cache>
+    <cache alias="margins">
+        <expiry>
+            <ttl unit="days">
+                1
+            </ttl>
+        </expiry>
+        <resources>
+            <heap unit="entries">10</heap>
+        </resources>
+    </cache>
+    <cache alias="openOrders">
+        <expiry>
+            <ttl unit="days">
+                1
+            </ttl>
+        </expiry>
+        <resources>
+            <heap unit="entries">500</heap>
+        </resources>
+    </cache>
+    <cache alias="stockCandles">
+        <expiry>
+            <ttl unit="days">
+                1
+            </ttl>
+        </expiry>
+        <resources>
+            <heap unit="entries">500</heap>
+        </resources>
+    </cache>
+
+    <cache alias="strategies">
+        <expiry>
+            <ttl unit="days">
+                30
+            </ttl>
+        </expiry>
+        <resources>
+            <heap unit="entries">20</heap>
+        </resources>
+    </cache>
+
+    <cache alias="openTrades">
+        <expiry>
+            <ttl unit="days">
+                1
+            </ttl>
+        </expiry>
+        <resources>
+            <heap unit="entries">50</heap>
+        </resources>
+    </cache>
+
+    <cache alias="configs">
+        <expiry>
+            <ttl unit="days">
+                30
+            </ttl>
+        </expiry>
+        <resources>
+            <heap unit="entries">50</heap>
+        </resources>
+    </cache>
+    <cache alias="activeUsers">
+        <expiry>
+            <ttl unit="days">
+                10
+            </ttl>
+        </expiry>
+        <resources>
+            <heap unit="entries">10</heap>
+        </resources>
+    </cache>
+
+    <cache alias="angeloneUserAccessTokens">
+        <expiry>
+            <ttl unit="hours">
+                12
+            </ttl>
+        </expiry>
+        <resources>
+            <heap unit="entries">10</heap>
+        </resources>
+    </cache>
+
+
+    <cache alias="angelKotakInstrumentMapping">
+        <expiry>
+            <ttl unit="hours">
+                12
+            </ttl>
+        </expiry>
+        <resources>
+            <heap unit="entries">1000</heap>
+        </resources>
+    </cache>
+    <cache alias="kotakAngelInstrumentMapping">
+        <expiry>
+            <ttl unit="hours">
+                12
+            </ttl>
+        </expiry>
+        <resources>
+            <heap unit="entries">1000</heap>
+        </resources>
+    </cache>
+    <cache alias="userStrategies">
+        <expiry>
+            <ttl unit="days">
+                30
+            </ttl>
+        </expiry>
+        <resources>
+            <heap unit="entries">20</heap>
+        </resources>
+    </cache>
+</config>
