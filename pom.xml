@@ -10,10 +10,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.trade</groupId>
-    <artifactId>algotrade</artifactId>
+    <artifactId>equityalgotrade</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>algotrade</name>
-    <description>This is Kotak securities integration</description>
+    <description>This is Angle one Broker integration</description>
     <properties>
         <java.version>17</java.version>
         <modelmapper-version>2.3.5</modelmapper-version>
@@ -24,10 +24,6 @@
         <nv-websocket-client.version>2.14</nv-websocket-client.version>
     </properties>
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
         <!-- Lombok dependency -->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -140,14 +136,6 @@
             <artifactId>tyrus-standalone-client</artifactId>
             <version>1.9</version>
         </dependency>
-
-        <dependency>
-            <groupId>com.neovisionaries</groupId>
-            <artifactId>nv-websocket-client</artifactId>
-            <version>2.14</version>
-        </dependency>
-
-
         <dependency>
             <groupId>org.java-websocket</groupId>
             <artifactId>Java-WebSocket</artifactId>
@@ -198,14 +186,7 @@
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
+
         <!-- TOTP End here -->
 
         <dependency>
@@ -291,23 +272,7 @@
                     <groupId>org.mapstruct</groupId>
                     <artifactId>mapstruct-processor</artifactId>
                 </dependency>
-                <dependency>
-                    <groupId>org.hibernate</groupId>
-                    <artifactId>hibernate-jpamodelgen</artifactId>
-                </dependency>
             </dependencies>
-        </profile>
-        <profile>
-            <id>profileOne</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>com.example</groupId>
-                        <artifactId>example-plugin</artifactId>
-                        <version>1.2.3</version>
-                    </plugin>
-                </plugins>
-            </build>
         </profile>
     </profiles>
 
